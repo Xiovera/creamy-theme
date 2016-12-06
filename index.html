@@ -8,13 +8,15 @@
   	<!--Bootstrap-->	
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 	<!--Script-->
-  	<script src="js/jquery.js"></script>
+  	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
   	<script src="js/bootstrap.min.js"></script>
+
 	<!--Css-->
-  	<link rel="stylesheet" href="css/main.css" type="text/css">
   	<link rel="stylesheet" href="css/animate.css" type="text/css">  	
   	<link rel="stylesheet" href="css/icomoon.css" type="text/css">
   	<link rel="stylesheet" href="css/queries.css" type="text/css">
+  	 <link rel="stylesheet" href="css/main.css" type="text/css">
+
   	<!--Fonts-->
   	<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
   	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -22,68 +24,59 @@
 </head>
 <body>
 	<header>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-3 col-sm-3">
-					<p><b>CREAMY THEME</b></p>
-				</div>
-				<div>
-					<nav class="col-md-9 col-sm-9  hidden-xs ">
-						<ul class="list-inline text-right text-unstyle">
-							<li><a href="#">HOW TO</a></li>
-							<li><a href="#">BEAUTY</a></li>
-							<li><a href="#">CONTACT</a></li>
-						</ul>						
-					</nav>
-					<nav class="visible-xs text-right">
-						<div class="dropdown">					
-							<button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							   	<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
-						 	</button>
-						  	<ul class="dropdown-menu text-right" aria-labelledby="dLabel">
-							    <li><a href="#">HOW TO</a></li>
-								<li><a href="#">BEAUTY</a></li>
-								<li><a href="#">CONTACT</a></li>
-						  	</ul>
-						</div>
-					</nav>	
-				</div>																		
-			</div>					
-		</div> 
+		<nav class="navbar navbar-fixed-top">
+			<div class="container-fluid">		 
+			    <div class="navbar-header">
+				    <button type="button" class="glyphicon glyphicon-menu-hamburger navbar-toggle collapsed" data-toggle="collapse" data-target="#navegador">
+				    </button>
+				    <a class="navbar-brand" href="#">Creamy Theme</a>
+			    </div>
+			    <div class="collapse navbar-collapse" id="navegador">   
+			      	<ul class="nav navbar-nav navbar-right">
+			        	<li><a href="#">How to</a></li>
+			            <li><a href="#">Beauty</a></li>
+			            <li><a href="#">Contact</a></li>        	
+			      	</ul>
+			    </div>
+			</div>
+		</nav>	
+
 	</header>
 	<!----------- end header------>
 	<section class="hero-section">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-12">
-					<div class="text-center">
-						<h1>CREAMY THEME</h1>
-						<small>The best theme</small>
-					</div>					
+		<div class="fondo-oscuro">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-12 text-center">
+						<div class="option animated bounceInLeft text-center">
+							<h1>CREAMY THEME</h1>
+							<small>The best theme</small>
+						</div>					
+					</div>
 				</div>
-			</div>
-		</div>		
+			</div>	
+		</div>	
 	</section>
 	<!----------- end hero-section------>
-	<section class="so-beauty-section">
+	<section class="so-beauty-section" id="ofrece">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 col-sm-6 col-xs-12">
 					<div class="text-center">
 						<h3>Oh! So Creamy</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt officiis, totam ipsa obcaecati nostrum animi voluptatem doloribus aliquam optio eius esse error quos deserunt laboriosam fuga modi rem, mollitia et.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt officiis, totam ipsa obcaecati nostrum animi voluptatem doloribus aliquam optio eius esse error quos deserunt laboriosam fuga modi rem, mollitia et. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto enim praesentium esse quis sint, sit pariatur vitae, rem quaerat, mollitia, aliquid ut a maiores. Unde ipsa totam minima, itaque dolor.</p>
 					</div>					
 				</div>
 				<div class="col-md-6 col-sm-6 col-xs-12">
 					<div>
-						<img src="img/ice1.jpg" alt="ice" class="img-responsive">
+						<img src="img/ice1.jpg" alt="ice" class="option animated pulse img-responsive">
 					</div>
 				</div>				
 			</div>			
 		</div>		
 	</section>
 	<!----------- end so-beauty-section------>
-	<section class="about-section">
+	<section class="about-section" id="ejemplo">
 		<div class="container">
 			<div class="row">
 				<div class="text-center col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">	
@@ -94,9 +87,9 @@
 		</div>
 	</section>
 	<!----------- end about-section------>
-	<section class="icon-section">
+	<section class="icon-section" id="usar">
 		<div class="container">
-			<div class="row">
+			<div class="row-icon">
 				<div class="col-md-4 col-sm-4 col-xs-12 text-center">
 					<span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span>
 					<h5><b>Desktop</b></h5>
